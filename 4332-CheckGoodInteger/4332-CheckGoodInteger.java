@@ -1,0 +1,19 @@
+// Last updated: 09/07/2026, 15:05:39
+class Solution {
+    public boolean checkGoodInteger(int n) {
+        n = Math.abs(n);
+        int digitSum=0;
+        int squareSum =0;
+        while(n>0){
+            int digit=n%10;
+            digitSum += digit;
+            squareSum += digit*digit;
+            n /= 10;
+            }
+        if(squareSum - digitSum >= 50){
+            return true;
+        }
+        return false;
+        
+    }
+}
