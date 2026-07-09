@@ -1,0 +1,17 @@
+// Last updated: 09/07/2026, 15:06:21
+class Solution {
+    public int differenceOfSums(int n, int m) {
+        int ans = 0;
+        for(int i = 1; i <= n; i++){
+            if(i % m != 0){
+                ans+=i;
+            } else{
+                ans-=i;
+            }
+        }
+        return ans;
+
+        
+        
+    }
+}
